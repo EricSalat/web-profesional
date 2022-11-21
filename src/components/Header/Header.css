@@ -1,0 +1,40 @@
+header {
+  counter-reset: item;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 13px;
+}
+
+header nav ol li {
+  display: inline;
+  flex-direction: row;
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  color: var(--titulo1);
+  padding: 10px;
+}
+
+header nav ol li :hover {
+  color: var(--verde);
+  
+}
+
+header button{
+  font-size: 13px;
+}
+
+
+header nav ol li ::before {
+  counter-increment: item;
+  content: "0" counter(item) ". ";
+  color: var(--verde);
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -6,7 +6,6 @@ function Button(props) {
     <>
       <a 
       href={props.href}
-      target="_blank"
       >
         <button type="button" className={props.className}>{props.texto}</button>
       </a>
