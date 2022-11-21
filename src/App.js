@@ -6,6 +6,7 @@ import NumberedHeading from './components/Numbered-Heading/Numbered-Heading';
 import FotoEric from "./assets/eric_salat.jpg";
 import TabButton from './components/TabButton/TabButton';
 import FichaTrabajo from './components/FichaTrabajo/FichaTrabajo';
+import Project from "./components/Project/Project";
 
 
 function App() {
@@ -107,6 +108,32 @@ function App() {
              /> */}
              
           </div>
+
+      </section>
+      <section id="works">
+        <NumberedHeading texto="Cosas que he programado" />
+        <div  className="projects-section">
+          <Project
+            title="Calculadora"
+            description="Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React."
+            tech="JavaScript"
+            tech2="React"
+            link="https://github.com/EricSalat/calculadora"
+           />
+          <Project
+            title="Lista de tareas"
+            description="Una app para anotar gestionar tus tareas: anota, tache y elimina."
+            tech="JavaScript"
+            tech2="React"
+            link="https://github.com/EricSalat/aplicacion-tareas"
+           />
+          <Project
+            title="Reserva entradas de cine"
+            description="Una app para comprar entradas de cine. Selecciona la película, los asientos y la cantidad de tickets. Hay descuentos entre semana."
+            tech2="React"
+            link="https://github.com/EricSalat/calculadora"
+           />
+        </div>
 
       </section>
         
