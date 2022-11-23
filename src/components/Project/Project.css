@@ -15,6 +15,7 @@
   padding: 2rem 1.75rem;
   border-radius: var(--borderRadius);
   margin-right: 15px;
+  /* align-items: stretch; */
 }
 
 /*Aquest selector noe stà funcionant*/
@@ -55,4 +56,10 @@
   font-weight: 400;
   font-size: 14px;
   margin-right: 15px;
+}
+
+@media (max-width: 576px) {
+  .project-card p {
+    /* font-size: 17px; */
+  }
 }

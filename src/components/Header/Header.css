@@ -38,3 +38,9 @@ header a {
   text-decoration: none;
   color: inherit;
 }
+
+@media (max-width: 576px) {
+  header nav {
+    display: none;
+  }
+}

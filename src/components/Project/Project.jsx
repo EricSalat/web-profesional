@@ -12,9 +12,12 @@ function Project(props) {
             <a href={props.link}>
               <RiGithubLine />
             </a>
+            
           </header>
-          <h3>{props.title}</h3>
-          <p>{props.description}</p>
+          <div>
+            <h3>{props.title}</h3>
+            <p>{props.description}</p>
+          </div>
           <footer>
             <ul>
               <li>{props.tech}</li>

@@ -25,9 +25,11 @@
   --background: #0a192f;
   --verde: #64ffda;
   --texto: #6e7a97;
+  --mobileFontSizeText: 18px;
   --titulo1: #ccd6f6;
   --titulo2: #8892b0;
   --borderRadius: 4px;
+
 
 }
 
@@ -41,4 +43,12 @@ html, body {
   background-color: var(--background);
   color: var(--texto);
   scroll-behavior: smooth;
+}
+
+.inactive {
+  display: none;
+}
+
+.is-selected {
+
 }

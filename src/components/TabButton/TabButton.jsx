@@ -15,8 +15,8 @@ function TabButton(props) {
 
   return(
   <>
-    <button className={props.class} 
-    // onClick={change}
+    <button className={props.class} id={props.id}
+    onClick={props.onclick}
     >{props.text}</button>
   </>  
     

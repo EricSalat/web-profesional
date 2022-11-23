@@ -15,11 +15,43 @@ main {
   counter-reset: section;
 }
 
+@media (max-width: 576px) {
+  main {
+    padding: 0 35px;
+    /* padding: 0; */
+    /* margin: 0 auto; */
+    min-width: 375px;
+    max-width: 100%
+    
+  }
+
+  #hero {
+    margin-top:45px;
+  }
+
+  main section:first-of-type p:last-of-type {
+    font-size: var(--mobileFontSizeText);
+  }
+
+  .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    grid-column: 1 / 4;
+    font-size: var(--mobileFontSizeText);
+  }
+
+
+}
+
 h1 {
   font-family: "Calibre", sans-serif;
   font-weight: 600;
   color: var(--titulo1);
-  font-size: 40px;
+  font-size: 80px;
 }
 
 h2 {
@@ -27,7 +59,7 @@ h2 {
   font-weight: 600;
   color: var(--titulo2);
   line-height: 1;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 section {
@@ -102,4 +134,80 @@ main section:first-of-type p:last-of-type {
   margin: 20px 0px 0px;
   overflow: hidden;
   list-style: none;
+}
+
+/*Section Contacto*/
+#next {
+  text-align: center;
+  width: 50%;
+}
+#next p:first-of-type {
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  color: var(--verde);
+  font-size: 20px;
+  padding-bottom: 10px;
+
+}
+
+#next p:nth-of-type(2) {
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;
+  color: var(--titulo1);
+  font-size: 70px;
+  padding-bottom: 15px;
+}
+
+footer.developed-by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  color: var(--texto);
+  font-size: 13px;
+  padding: 30px 0;
+}
+
+footer.developed-by a {
+  /* text-decoration: none; */
+  color: inherit;
+}
+
+/*ASIDE*/
+
+/* .right-aside {
+  position: absolute;
+  bottom: 0;
+} */
+
+.right-aside a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 20px auto;
+  padding: 10px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+
+}
+
+.right-aside a:hover {
+  transform: translateY(-3px);
+  color: var(--verde);
+}
+
+.right-aside a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--texto);
 }

@@ -1,0 +1,62 @@
+.jobs {
+  display: flex;
+  flex-direction: row;
+}
+.job-description {
+  margin-left: 2rem;
+}
+
+.job-description h3 {
+  color: var(--titulo1);
+  padding-bottom: 6px;
+  font-family: "Calibre", sans-serif;
+  font-weight: 600;  
+  font-size: 23px; 
+}
+
+.job-description h3 a {
+  color: var(--verde);
+  font-size: 23px; 
+  text-decoration: none;
+}
+
+.job-description p {
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.job-description ul {
+  padding-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+}
+
+.job-description ul li {
+  font-size: 20px;
+  
+}
+
+/* .job-description h3 {
+  color: var(--titulo1)
+} */
+
+@media (max-width: 576px) {
+  .jobs {
+    display: block;
+  }
+  
+  .jobs-slider {
+    display: flex;
+    border-bottom: 2px solid #233554;
+        margin-bottom: 40px;
+
+    
+    overflow-x: auto;
+  }
+
+  .jobs ul li {
+    font-size: var(--mobileFontSizeText);
+  }
+}

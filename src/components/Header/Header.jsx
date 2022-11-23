@@ -12,7 +12,7 @@ function Header() {
           <li><a href="#about">Sobre mi</a></li>
           <li><a href="#experience">Experiencia</a></li>
           <li><a href="#works">Trabajos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#next">Contacto</a></li>
           <Button 
             texto="Currículum" 
             href="#"
