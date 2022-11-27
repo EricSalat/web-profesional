@@ -3,6 +3,8 @@ import "./FichaTrabajo.css";
 
 function FichaTrabajo(props) {
 
+  
+
   return(
     <div className={`job-description | ${props.display}`}>
       {
