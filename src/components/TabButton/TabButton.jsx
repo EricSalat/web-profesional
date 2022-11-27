@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import * as React from "react";
 import "./TabButton.css";
 
 function TabButton(props) {

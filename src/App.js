@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import { useState } from "react"
 import './App.css';
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
@@ -7,6 +6,8 @@ import NumberedHeading from './components/Numbered-Heading/Numbered-Heading';
 import FotoEric from "./assets/eric_salat.jpg";
 import Project from "./components/Project/Project";
 import Trabajos from './components/Trabajos/Trabajos';
+import LeftAside from './components/Asides/LeftAside';
+import RightAside from './components/Asides/RightAside';
 // import { Header, Button, NumberedHeading, TabButton, FichaTrabajo, Project } from "@components";
 
 
@@ -15,9 +16,11 @@ function App() {
 
   return (
     <div className="App">
+         <LeftAside />
+         <RightAside />
+        
     <Header />
       <main>
-        <aside className="right-aside"><a href="mailto:ericsalatb@gmail.com">ericsalatb@gmail.com</a></aside>
         <section id="hero">
           <p className="mini-heading">Hola, me llamo</p>
           <h1 className="big-heading">Èric Salat.</h1>
@@ -93,9 +96,9 @@ function App() {
         </section>
         
       </main>
-      <footer className="developed-by">
+      {/* <footer className="developed-by">
         <p>Desarrollado con ❤️ por <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
-      </footer>
+      </footer> */}
     </div>
   );
 }

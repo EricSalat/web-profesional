@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import * as React from "react";
+import { useState } from "react";
 import TabButton from '../../components/TabButton/TabButton';
 import FichaTrabajo from './FichaTrabajo/FichaTrabajo';
 import NumberedHeading from '../../components/Numbered-Heading/Numbered-Heading';

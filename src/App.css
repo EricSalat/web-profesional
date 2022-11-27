@@ -174,40 +174,5 @@ footer.developed-by a {
   color: inherit;
 }
 
-/*ASIDE*/
 
-/* .right-aside {
-  position: absolute;
-  bottom: 0;
-} */
 
-.right-aside a {
-  text-decoration: none;
-  color: inherit;
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  margin: 20px auto;
-  padding: 10px;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  writing-mode: vertical-rl;
-  display: flex;
-  justify-content: flex-end;
-  position: absolute;
-
-}
-
-.right-aside a:hover {
-  transform: translateY(-3px);
-  color: var(--verde);
-}
-
-.right-aside a::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: var(--texto);
-}
