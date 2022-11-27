@@ -12,11 +12,6 @@ import Trabajos from './components/Trabajos/Trabajos';
 
 function App() {
 
-  const [cambio, setCambio] = useState(false);
-
-  function mostrar() {
-    setCambio(!cambio)
-  }
 
   return (
     <div className="App">
