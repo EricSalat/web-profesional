@@ -12,7 +12,6 @@ import MenuMobile from './components/Header/MenuMobile';
 import { SlSocialLinkedin } from "react-icons/sl";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGithubLine } from "react-icons/ri";
-// import { Header, Button, NumberedHeading, TabButton, FichaTrabajo, Project } from "@components";
 
 
 function App() {
@@ -104,7 +103,7 @@ function App() {
         <section id="next">
           <p>04. ¿Ahora qué?</p>
           <p>Sigamos en contacto</p>
-          <p>Actualmente estoy buscando nuevas oportunidades laborales. Si tienes alguna propuesta o consulta, no dudes en contactarme. Te responderé lo más rápido posible!</p>
+          <p>Actualmente estoy buscando nuevas oportunidades laborales. Si tienes alguna propuesta o consulta, no dudes en contactarme. ¡Te responderé lo más rápido posible!</p>
           <Button
             className="know-me-button"
             texto="Contacto" href="mailto:ericsalatb@gmail.com" />

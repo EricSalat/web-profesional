@@ -37,7 +37,4 @@ export default function LeftAside() {
       </div>
     </aside>  
   );
-
 }
-
-//TODO: Hacer el hover de los iconos con Radium

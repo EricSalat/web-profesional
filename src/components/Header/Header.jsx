@@ -1,8 +1,10 @@
 import * as React from "react";
 import Button from "../Button/Button";
 import "./Header.css";
-import logo from "../../assets/logos/favicon.png";
-import { CgMenuRound } from "react-icons/cg";
+import logo from "../../assets/logos/logo.png";
+import { BiMenuAltRight } from "react-icons/bi";
+import cv from "./cv.pdf";
+
 
 
 function Header(props) {
@@ -18,7 +20,7 @@ function Header(props) {
             <li><a href="#next">Contacto</a></li>
             <Button
               texto="Currículum"
-              href="/cv.pdf"
+              href={cv}
               className="header-button"
             />
           </ol>
@@ -30,7 +32,7 @@ function Header(props) {
       
         className="mobile-menu-toggle"
         onClick={props.onclick}>
-        <CgMenuRound
+        <BiMenuAltRight
           style={{ color: "var(--verde)", cursor: "pointer" }}
           size="40"
         />

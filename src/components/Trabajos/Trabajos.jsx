@@ -11,11 +11,13 @@ export default function Trabajos() {
   const [poliedric, setPoliedric] = useState(false);
   const [ainkaa, setAinkaa] = useState(false);
   const [adiplus, setAdiplus] = useState(false);
+  const [diariAra, setDiariAra] = useState(false);
 
   const [arianTab, setArianTab] = useState(true);
   const [poliedricTab, setPoliedricTab] = useState(false);
   const [ainkaaTab, setAinkaaTab] = useState(false);
   const [adiPlusTab, setAdiPlusTab] = useState(false);
+  const [diariAraTab, setDiariAraTab] = useState(false);
 
   return (
     <>
@@ -27,11 +29,12 @@ export default function Trabajos() {
             id="arian"
             class={arianTab ? "tab-button-active" : "tab-button-inactive"}
             onclick={() => {
-              setArian(true); setPoliedric(false); setAinkaa(false); setAdiplus(false);
+              setArian(true); setPoliedric(false); setAinkaa(false); setAdiplus(false); setDiariAra(false);
               setArianTab(true);
               setPoliedricTab(false);
               setAinkaaTab(false);
               setAdiPlusTab(false);
+              setDiariAraTab(false);
             }}
           />
           <TabButton
@@ -39,11 +42,12 @@ export default function Trabajos() {
             class={poliedricTab ? "tab-button-active" : "tab-button-inactive"}
             id="poliedric"
             onclick={() => {
-              setArian(false); setPoliedric(true); setAinkaa(false); setAdiplus(false);
+              setArian(false); setPoliedric(true); setAinkaa(false); setAdiplus(false); setDiariAra(false);
               setArianTab(false);
               setPoliedricTab(true);
               setAinkaaTab(false);
               setAdiPlusTab(false);
+              setDiariAraTab(false);
 
             }}
           />
@@ -51,22 +55,37 @@ export default function Trabajos() {
             class={ainkaaTab ? "tab-button-active" : "tab-button-inactive"}
             id="ainkaa"
             onclick={() => {
-              setArian(false); setPoliedric(false); setAinkaa(true); setAdiplus(false);
+              setArian(false); setPoliedric(false); setAinkaa(true); setAdiplus(false); setDiariAra(false);
               setArianTab(false);
               setPoliedricTab(false);
               setAinkaaTab(true);
               setAdiPlusTab(false);
+              setDiariAraTab(false);
             }} />
           <TabButton
             text="Adiplus Tech & Content"
             class={adiPlusTab ? "tab-button-active" : "tab-button-inactive"}
             id="adiplus"
             onclick={() => {
-              setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(true);
+              setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(true); setDiariAra(false);
               setArianTab(false);
               setPoliedricTab(false);
               setAinkaaTab(false);
               setAdiPlusTab(true);
+              setDiariAraTab(false);
+            }}
+          />
+          <TabButton
+            text="Diari Ara"
+            class={adiPlusTab ? "tab-button-active" : "tab-button-inactive"}
+            id="diariara"
+            onclick={() => {
+              setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(false); setDiariAra(true);
+              setArianTab(false);
+              setPoliedricTab(false);
+              setAinkaaTab(false);
+              setAdiPlusTab(false);
+              setDiariAraTab(true);
             }}
           />
         </div>
@@ -130,7 +149,23 @@ export default function Trabajos() {
             duty1="Redacción y edición de noticias y contenidos para el portal del sector gastronómico Pan&Pizza."
             duty2="Redacción de artículos para la revista Newspa."
             duty3="Redacción de noticias y artículos sobre seguros en Tiempo Seguro."
-            duty4="Diseño e implementación de estrategias de  Posicionamiento SEO y campañas de email marketing."
+            duty4="Diseño e implementación de estrategias de Posicionamiento SEO y campañas de email marketing."
+          />
+        ) : (
+          null
+        )}
+
+        {diariAra ? (
+          <FichaTrabajo
+            id="diariara-description"
+            role="Periodista"
+            href="https://www.ara.cat/"
+            company="Diari Ara"
+            period="Septiembre 2018 - Mayo 2019"
+            duty1="Redactor en prácticas de noticias, reportajes, entrevistas y otros contenidos en la sección de cultura sobre temas de música, literatura, cine, teatro y artes visuales."
+            duty2="Cobertura de la actualidad diaria."
+            duty3="Asistencia a ruedas de prensa."
+            duty4="Colaboración puntual con otras secciones."
           />
         ) : (
           null
