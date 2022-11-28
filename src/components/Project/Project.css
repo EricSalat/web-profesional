@@ -7,6 +7,9 @@
 
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #112240;
   /* text-align: center; */
   height: auto;
@@ -14,7 +17,8 @@
   min-height: 315px;
   padding: 2rem 1.75rem;
   border-radius: var(--borderRadius);
-  margin-right: 15px;
+  margin-right: 1rem;
+  margin-top: 1rem;
   /* align-items: stretch; */
 }
 
@@ -59,7 +63,9 @@
 }
 
 @media (max-width: 576px) {
-  .project-card p {
-    /* font-size: 17px; */
+  
+  .project-card {
+    margin-top: 20px;
   }
+  
 }

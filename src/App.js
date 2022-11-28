@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/logos/favicon.png';
 import './App.css';
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
@@ -13,19 +13,17 @@ import RightAside from './components/Asides/RightAside';
 
 function App() {
 
-
   return (
     <div className="App">
          <LeftAside />
          <RightAside />
-        
-    <Header />
+         <Header />
       <main>
         <section id="hero">
           <p className="mini-heading">Hola, me llamo</p>
           <h1 className="big-heading">Èric Salat.</h1>
           <h2 className="big-heading">Y programo aplicaciones web.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, cum nihil odio ab modi asperiores itaque libero. Repellendus voluptatibus placeat dolore dicta eum suscipit reiciendis cumque? Ipsa possimus quod temporibus!</p>
+          <p>Soy Front-end Developer con experiencia en marketing digital y me dedico a crear aplicaciones desde el principio hasta el final: empezando por la concepción de la idea de negocio, pasando por el desarrollo, hasta llegar a la monetización.</p>
           <Button
           texto="Haz clic para conocerme"
           className="know-me-button"
@@ -38,7 +36,7 @@ function App() {
             <div className="about-me-text">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque quia unde, dicta nisi rerum! Quisquam rem et aliquid nam accusamus dolores. Nulla rerum dolorum voluptas sunt est magni nostrum!</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque quia unde, dicta nisi rerum! Quisquam rem et aliquid nam accusamus dolores. Nulla rerum dolorum voluptas sunt est magni nostrum!</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque quia unde, dicta nisi rerum! Quisquam rem et aliquid nam accusamus dolores. Nulla rerum dolorum voluptas sunt est magni nostrum!</p>
+              <p>Estas son las tecnologías con las que he estado trabajando:</p>
               <div>
                 <ul className="skills-list">
                   <li>HTML</li>
@@ -57,6 +55,7 @@ function App() {
           </div>
         </section>
         <section id="experience">
+
           <Trabajos />
 
         </section>
@@ -68,20 +67,22 @@ function App() {
               description="Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React."
               tech="JavaScript"
               tech2="React"
-              link="https://github.com/EricSalat/calculadora"
+              weblink="http://ericsalat.com/calculadora/"
+              githublink="https://github.com/EricSalat/calculadora"
             />
             <Project
               title="Lista de tareas"
-              description="Una app para anotar gestionar tus tareas: anota, tache y elimina."
+              description="Una app para apuntar y gestionar tus tareas: anota, tacha y elimina lo que hayas completado. Hecha con JavaScript y React."
               tech="JavaScript"
               tech2="React"
-              link="https://github.com/EricSalat/aplicacion-tareas"
+              weblink="http://ericsalat.com/tareas/"
+              githublink="https://github.com/EricSalat/aplicacion-tareas"
             />
             <Project
               title="Reserva entradas de cine"
               description="Una app para comprar entradas de cine. Selecciona la película, los asientos y la cantidad de tickets. Hay descuentos entre semana."
               tech="React"
-              link="https://github.com/EricSalat/Selector-Asientos"
+              githublink="https://github.com/EricSalat/Selector-Asientos"
             />
           </div>
 
@@ -96,9 +97,9 @@ function App() {
         </section>
         
       </main>
-      {/* <footer className="developed-by">
+      <footer className="developed-by">
         <p>Desarrollado con ❤️ por <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
-      </footer> */}
+      </footer>
     </div>
   );
 }

@@ -51,3 +51,10 @@
   margin: 0px auto;
   background-color: var(--texto);
 }
+
+@media (max-width: 576px) {
+
+  .left-aside, .right-aside {
+    display: none;
+  }
+}

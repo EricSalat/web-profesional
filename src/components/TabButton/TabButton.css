@@ -54,13 +54,25 @@
 }
 
 @media (max-width: 576px) {
-  .tab-button {
+  .tab-button-active {
     font-size: 12px;
     border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid var(--verde);
   }
-  .tab-button:hover {
+  .tab-button-active:hover {
+    font-size: 12px;
     border-bottom: 2px solid var(--verde);
     border-left: none;
     color: var(--verde);
+  }
+
+  .tab-button-inactive {
+    font-size: 12px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid var(--texto);
   }
 }

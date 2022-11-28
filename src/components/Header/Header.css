@@ -41,6 +41,13 @@ header a {
 
 @media (max-width: 576px) {
   header nav {
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+  }
+  
+  header nav div {
     display: none;
   }
 }

@@ -1,12 +1,14 @@
 import * as React from "react";
 import Button from "../Button/Button";
 import "./Header.css";
+import logo from "../../assets/logos/favicon.png";
+
 
 function Header() {
   return(
     <header>
     <nav>
-      <span>ÈS</span>
+      <img src={logo} height="40" width="40" href="http://ericsalat.com/"></img>
       <div>
         <ol>
           <li><a href="#about">Sobre mi</a></li>
@@ -15,7 +17,7 @@ function Header() {
           <li><a href="#next">Contacto</a></li>
           <Button 
             texto="Currículum" 
-            href="#"
+            href="/cv.pdf"
             className="header-button"
           />
         </ol>

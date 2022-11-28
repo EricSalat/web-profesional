@@ -6,7 +6,7 @@ function FichaTrabajo(props) {
   
 
   return(
-    <div className={`job-description | ${props.display}`}>
+    <div className="job-description">
       {
         <div id={props.id}>
           <h3>{props.role} — <a href={props.href} target="_blank">{props.company}</a></h3>
@@ -16,8 +16,6 @@ function FichaTrabajo(props) {
             <li>{props.duty2}</li>
             <li>{props.duty3}</li>
             <li>{props.duty4}</li>
-            <li>{props.duty5}</li>
-            <li>{props.duty6}</li>
           </ul>
         </div>  
       }

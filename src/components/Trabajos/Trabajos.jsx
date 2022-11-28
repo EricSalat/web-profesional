@@ -74,7 +74,7 @@ export default function Trabajos() {
         {arian ? (
           <FichaTrabajo
             id="arian-description"
-            role="Desarrollador de front-end"
+            role="Desarrollador de Front-end"
             period="Julio - Octubre 2022"
             company="Arian International Projects"
             href="https://arianinternational.eu/"
@@ -108,21 +108,17 @@ export default function Trabajos() {
         {ainkaa ? (
           <FichaTrabajo
             id="ainkaa-description"
-            role="Desarrollador de front-end & Gestor"
+            role="Desarrollador de Front-end & Project Manager"
             company="Ainkaa"
-            href=""
             period="Marzo 2021 - Actualidad"
-            duty1="Programa de creación de start-ups dirigido a jóvenes para crear una app móvil viable donde se realizó"
-            duty2="Programación en HTML, CSS, Javascript y React."
-            duty3="Diseño UX UI. Diseño de prototipos con Figma."
-            duty4="Creación de planes de empresa, de negocio y viabilidad"
-            duty5="Realización de plan de marketing e investigación de mercados"
-            duty6="Elevator pitch y presentación de PMV para la búsqueda de financiación."
+            duty1="Programa de creación de start-ups dirigido a jóvenes para crear una app móvil viable donde se realizó:"
+            duty2="Programación en HTML, CSS, Javascript y React. Diseño UX UI. Diseño de prototipos con Figma."
+            duty3="Creación de planes de empresa, de negocio y viabilidad. Realización de plan de marketing e investigación de mercados."
+            duty4="Elevator pitch y presentación de PMV para la búsqueda de financiación."
           />
         ) : (
           null
         )}
-
 
         {adiplus ? (
           <FichaTrabajo
@@ -133,9 +129,8 @@ export default function Trabajos() {
             period="Octubre 2019 - Junio 2020"
             duty1="Redacción y edición de noticias y contenidos para el portal del sector gastronómico Pan&Pizza."
             duty2="Redacción de artículos para la revista Newspa."
-            duty3="Redacció de noticias y artículos sobre seguros en Tiempo Seguro."
-            duty4="Posicionamiento SEO."
-            duty5="Elaboración de newsletters."
+            duty3="Redacción de noticias y artículos sobre seguros en Tiempo Seguro."
+            duty4="Diseño e implementación de estrategias de  Posicionamiento SEO y campañas de email marketing."
           />
         ) : (
           null

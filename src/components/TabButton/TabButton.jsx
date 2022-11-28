@@ -10,7 +10,6 @@ function TabButton(props) {
     className={props.class} 
     id={props.id}
     onClick={props.onclick}
-    // onClick={props.onclick}
     >{props.text}</button>
   </>  
     

@@ -9,8 +9,10 @@ function Project(props) {
       <div>
         <div className="project-card">
           <header className="project-top">
-            <FcOpenedFolder/>
-            <a href={props.link}>
+            <a href={props.weblink} target="_blank">
+              <FcOpenedFolder />
+            </a>
+            <a href={props.githublink} target="_blank">
               <RiGithubLine />
             </a>
             

@@ -37,3 +37,9 @@ h2 .numbered-heading {
   background-color: #233554; 
   box-sizing: inherit;
 }
+
+@media (max-width: 576px) {
+  .numbered-heading {
+    /* font-size: 24px; */
+  }
+}
