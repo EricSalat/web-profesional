@@ -1,5 +1,5 @@
-import logo from './assets/logos/favicon.png';
 import './App.css';
+import { useState } from 'react';
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import NumberedHeading from './components/Numbered-Heading/Numbered-Heading';
@@ -8,16 +8,30 @@ import Project from "./components/Project/Project";
 import Trabajos from './components/Trabajos/Trabajos';
 import LeftAside from './components/Asides/LeftAside';
 import RightAside from './components/Asides/RightAside';
+import MenuMobile from './components/Header/MenuMobile';
+import { SlSocialLinkedin } from "react-icons/sl";
+import { HiOutlineMail } from "react-icons/hi";
+import { RiGithubLine } from "react-icons/ri";
 // import { Header, Button, NumberedHeading, TabButton, FichaTrabajo, Project } from "@components";
 
 
 function App() {
 
+  const [menuCollapse, setMenuCollapse] = useState(false);
+  const menuIconClick = () => {
+    menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
+
   return (
     <div className="App">
-         <LeftAside />
-         <RightAside />
-         <Header />
+      <LeftAside />
+      <RightAside />
+      { menuCollapse ? (
+        <MenuMobile onClick={menuIconClick} />
+        ) : (
+        null
+        )}
+      <Header onclick={menuIconClick} />
       <main>
         <section id="hero">
           <p className="mini-heading">Hola, me llamo</p>
@@ -25,17 +39,17 @@ function App() {
           <h2 className="big-heading">Y programo aplicaciones web.</h2>
           <p>Soy Front-end Developer con experiencia en marketing digital y me dedico a crear aplicaciones desde el principio hasta el final: empezando por la concepción de la idea de negocio, pasando por el desarrollo, hasta llegar a la monetización.</p>
           <Button
-          texto="Haz clic para conocerme"
-          className="know-me-button"
-          href="#about"
+            texto="Haz clic para conocerme"
+            className="know-me-button"
+            href="#about"
           />
         </section>
         <section id="about">
-          <NumberedHeading texto="Sobre mi"/>
+          <NumberedHeading texto="Sobre mi" />
           <div className="about-me">
             <div className="about-me-text">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque quia unde, dicta nisi rerum! Quisquam rem et aliquid nam accusamus dolores. Nulla rerum dolorum voluptas sunt est magni nostrum!</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non itaque quia unde, dicta nisi rerum! Quisquam rem et aliquid nam accusamus dolores. Nulla rerum dolorum voluptas sunt est magni nostrum!</p>
+              <p>Soy un perfil híbrido. Combino mi formación técnica en programación web con el conocimiento en marketing y comunicación. Estas disciplinas me dan una visión global de los proyectos, desde la creación hasta la monetización. </p>
+              <p>Enfoco en diseño y el desarrollo web en la mejora de los embudos de tráfico y la conversión de leads y ventas. Mi bagaje polivalente me ha dado habilidades de oratoria, trabajo en equipo, reuniones con clientes y capacidad analítica de métricas y datos.</p>
               <p>Estas son las tecnologías con las que he estado trabajando:</p>
               <div>
                 <ul className="skills-list">
@@ -61,7 +75,7 @@ function App() {
         </section>
         <section id="works">
           <NumberedHeading texto="Cosas que he programado" />
-          <div  className="projects-section">
+          <div className="projects-section">
             <Project
               title="Calculadora"
               description="Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React."
@@ -91,13 +105,37 @@ function App() {
           <p>04. ¿Ahora qué?</p>
           <p>Sigamos en contacto</p>
           <p>Actualmente estoy buscando nuevas oportunidades laborales. Si tienes alguna propuesta o consulta, no dudes en contactarme. Te responderé lo más rápido posible!</p>
-          <Button 
-            className="know-me-button" 
+          <Button
+            className="know-me-button"
             texto="Contacto" href="mailto:ericsalatb@gmail.com" />
         </section>
-        
+
       </main>
       <footer className="developed-by">
+        <ul>
+          <li>
+            <a href="https://github.com/EricSalat" target="_blank">
+              <RiGithubLine
+                size="22"
+                style={{}}
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">
+              <SlSocialLinkedin
+                size="20"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ericsalatb@gmail.com" target="_blank">
+              <HiOutlineMail
+                size="22"
+              />
+            </a>
+          </li>
+        </ul>
         <p>Desarrollado con ❤️ por <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
       </footer>
     </div>

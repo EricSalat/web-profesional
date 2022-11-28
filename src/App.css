@@ -1,5 +1,15 @@
-a{
+a {
   cursor: pointer;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p{
+  padding-bottom: 12px;
 }
 
 main {
@@ -10,13 +20,13 @@ main {
   padding: 50px 150px;
   background-color: var(--background);
   font-family: "Calibre", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
   font-size: 20px;
   counter-reset: section;
 }
 
 .imgFluid {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
 }
 
@@ -24,22 +34,15 @@ main {
   main {
     padding: 0 35px;
     max-width: 100vh;
-    
-  }
-
-  #hero {
-    margin-top:0px;
-    padding-top:45px;
   }
 
   main section:first-of-type p:last-of-type {
     font-size: var(--mobileFontSizeText);
   }
+
   section {
     max-width: 100%;
   }
-
-
 }
 
 h1 {
@@ -69,8 +72,8 @@ section {
   font-size: clamp(40px, 8vw, 80px);
 }
 
-.mini-heading{
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
+.mini-heading {
+  font-family: 'Fira Code', 'Space Grotesk', sans-serif;
   font-weight: 400;
   color: var(--verde);
   padding-bottom: 25px;
@@ -79,7 +82,7 @@ section {
 
 .know-me-button {
   font-size: 16px;
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-family: 'Fira Code', 'Space Grotesk', sans-serif;
   font-weight: 400;
   color: var(--verde);
   background-color: transparent;
@@ -121,12 +124,11 @@ main section:first-of-type p:last-of-type {
   }
 }
 
-
 .skills-list {
   padding: 0px;
   margin: 20px 0px 0px;
   /* overflow: hidden; */
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-family: 'Fira Code', 'Space Grotesk', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.7;
@@ -139,9 +141,6 @@ main section:first-of-type p:last-of-type {
   list-style: none;
 }
 
-/* .skills-list li {
-  padding-
-} */
 
 .skills-list li::before {
   content: "▹";
@@ -150,7 +149,6 @@ main section:first-of-type p:last-of-type {
   padding-right: 10px;
 }
 
-/*Section proyectos programados*/
 #works {
   margin-top: 2rem;
 }
@@ -160,8 +158,9 @@ main section:first-of-type p:last-of-type {
   text-align: center;
   width: 50%;
 }
+
 #next p:first-of-type {
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-family: 'Fira Code', 'Space Grotesk', sans-serif;
   font-weight: 400;
   color: var(--verde);
   font-size: 20px;
@@ -176,31 +175,61 @@ main section:first-of-type p:last-of-type {
   font-size: 70px;
   padding-bottom: 15px;
 }
-@media (max-width: 576px) {
-  #next {
-    width: 100%
-  }
 
+@media (max-width: 576px) {
+  #hero {
+    margin-top: 0px;
+    padding-top: 45px;
+  }
+  #experience {
+    margin-bottom: 5rem;
+  }
+  #works {
+    margin-top: 0;
+  }
+  #next {
+    width: 100%;
+    margin-top: 0;
+  }
   #next p:nth-of-type(2) {
     font-size: 40px;
   }
+
+
 }
 
-footer.developed-by {
+.developed-by {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  flex-direction: column;
+  font-family: 'Fira Code', 'Space Grotesk', sans-serif;
   font-weight: 400;
   color: var(--texto);
   font-size: 13px;
   padding: 30px 0;
 }
 
-footer.developed-by a {
-  /* text-decoration: none; */
+.developed-by a {
   color: inherit;
+  text-decoration: underline;
 }
 
+.developed-by a:hover {
+  color: var(--verde);
+}
 
+.developed-by ul {
+  display: none;
+}
 
+@media (max-width: 576px) {
+  .developed-by ul {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+  .developed-by ul li{
+    padding: 0 1rem;
+  }
+}

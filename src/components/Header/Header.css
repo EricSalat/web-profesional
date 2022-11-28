@@ -1,12 +1,12 @@
 header {
   counter-reset: item;
 }
-
 header nav {
   display: flex;
   justify-content: space-between;
   padding: 50px;
   font-size: 13px;
+  position: relative;
 }
 
 header nav ol li {
@@ -35,7 +35,7 @@ header nav ol li ::before {
 }
 
 header a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 
@@ -43,11 +43,101 @@ header a {
   header nav {
     padding-top: 30px;
     padding-left: 35px;
-    padding-right: 35px;
-    
+    padding-right: 35px;  
   }
-  
-  header nav div {
+}
+
+/*MOBILE MENU MODAL*/
+
+.mobile-menu-modal {
+  background-color: #112240;
+  width: 75%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-menu-bottom {
+  counter-reset: mobileMenu;
+  font-family: 'Fira Code','Space Grotesk', sans-serif;
+  font-weight: 400;
+  color: var(--titulo1);
+  padding: 10px;
+}
+
+.mobile-menu-bottom ul {
+  text-align: center;
+}
+.mobile-menu-bottom ul li {
+  font-size: 17px;
+  color: var(--titulo1);
+
+}
+.mobile-menu-bottom ul li:last-of-type {
+  font-size: 17px;
+  color: var(--titulo1);
+  padding-bottom: 2rem;
+}
+
+.mobile-menu-bottom ul li::before {
+  counter-increment: mobileMenu;
+  content: "0" counter(item) ". ";
+  color: var(--verde);
+  font-size: 13px;
+  display: block;
+  padding-bottom: 5px;
+
+}
+
+.mobile-menu-toggle{
+  /* display: none; */
+}
+@media (min-width: 768px) {
+  .mobile-menu-toggle{
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .contenedor-menu {
+    display: none;
+  }
+}
+
+nav {
+  align-items: center;
+}
+
+
+.mobile-menu-modal li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 16px;
+}
+
+.mobile-menu-modal li:hover {
+  color: var(--verde);
+}
+.mobile-menu-modal a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mobile-menu-top {
+  /* display: flex;
+  justify-content: center; */
+  width: auto;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 16px;
+  /* background-color: bisque; */
+}
+
+/* .know-me-button {
+  margin-top: 0;
+} */

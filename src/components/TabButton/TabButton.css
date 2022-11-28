@@ -75,4 +75,11 @@
     border-right: none;
     border-bottom: 2px solid var(--texto);
   }
+
+  .tab-button-inactive:hover {
+    border-bottom: 2px solid var(--verde);
+    border-left: none;
+    background-color: rgba(100, 255, 218, 0.1);
+    
+  }
 }
