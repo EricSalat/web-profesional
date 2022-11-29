@@ -89,6 +89,15 @@ function App() {
               githublink="https://github.com/EricSalat/web-profesional"
             />
             <Project
+              title="Web Arian International"
+              description="Rediseño de UX/UI de la web corporativa. Implementación de diseño responsive y mejora del rendimiento."
+              tech="HTML"
+              tech2="CSS"
+              tech3="Wordpress"
+              weblink="https://arianinternational.eu/"
+              githublink="https://arianinternational.eu/"
+            />
+            <Project
               title="Calculadora"
               description="Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React."
               tech="HTML"
@@ -105,7 +114,6 @@ function App() {
               tech2="CSS"
               tech3="JavaScript"
               tech4="React"
-              // tech2="React
               githublink="https://github.com/EricSalat/Selector-Asientos"
             />
             {/* <Project
