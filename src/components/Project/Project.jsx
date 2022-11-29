@@ -25,6 +25,8 @@ function Project(props) {
             <ul>
               <li>{props.tech}</li>
               <li>{props.tech2}</li>
+              <li>{props.tech3}</li>
+              <li>{props.tech4}</li>
             </ul>
           </footer>
         </div>

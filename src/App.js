@@ -80,27 +80,42 @@ function App() {
           <NumberedHeading texto="Cosas que he programado" />
           <div className="projects-section">
             <Project
+              title="Web profesional"
+              description="Revisa el código de este mismo sitio, mi web profesional, hecha con HTML, CSS, JavaScript y React"   
+              tech="HTML"
+              tech2="CSS"
+              tech3="JavaScript"
+              tech4="React"
+              githublink="https://github.com/EricSalat/web-profesional"
+            />
+            <Project
               title="Calculadora"
               description="Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React."
-              tech="JavaScript"
-              tech2="React"
+              tech="HTML"
+              tech2="CSS"
+              tech3="JavaScript"
+              tech4="React"
               weblink="http://ericsalat.com/calculadora/"
               githublink="https://github.com/EricSalat/calculadora"
             />
             <Project
+              title="Reserva entradas de cine"
+              description="Una app para comprar entradas de cine. Selecciona la película, los asientos y la cantidad de tickets. Hay descuentos entre semana."
+              tech="HTML"
+              tech2="CSS"
+              tech3="JavaScript"
+              tech4="React"
+              // tech2="React
+              githublink="https://github.com/EricSalat/Selector-Asientos"
+            />
+            {/* <Project
               title="Lista de tareas"
               description="Una app para apuntar y gestionar tus tareas: anota, tacha y elimina lo que hayas completado. Hecha con JavaScript y React."
               tech="JavaScript"
               tech2="React"
               weblink="http://ericsalat.com/tareas/"
               githublink="https://github.com/EricSalat/aplicacion-tareas"
-            />
-            <Project
-              title="Reserva entradas de cine"
-              description="Una app para comprar entradas de cine. Selecciona la película, los asientos y la cantidad de tickets. Hay descuentos entre semana."
-              tech="React"
-              githublink="https://github.com/EricSalat/Selector-Asientos"
-            />
+            /> */}
           </div>
 
         </section>
