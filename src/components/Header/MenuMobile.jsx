@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
 import Button from "../Button/Button";
-// import logo from '../../assets/logos/favicon.png';
 import { IoIosClose } from "react-icons/io";
+import cv from "./cv.pdf";
 
 function MenuMobile(props) {
 
@@ -22,7 +22,7 @@ function MenuMobile(props) {
             </ul>
             <Button 
             texto="Currículum" 
-            href="/cv.pdf"
+            href={cv}
             className="know-me-button"
           />
           </div>

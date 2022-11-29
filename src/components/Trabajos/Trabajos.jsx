@@ -77,7 +77,7 @@ export default function Trabajos() {
           />
           <TabButton
             text="Diari Ara"
-            class={adiPlusTab ? "tab-button-active" : "tab-button-inactive"}
+            class={diariAraTab ? "tab-button-active" : "tab-button-inactive"}
             id="diariara"
             onclick={() => {
               setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(false); setDiariAra(true);
@@ -108,7 +108,6 @@ export default function Trabajos() {
 
         {poliedric ? (
           <FichaTrabajo
-
             id="poliedric-description"
             role="Gestor de campañas SEM & PPC"
             company="Polièdric"
