@@ -97,10 +97,10 @@ export default function Trabajos() {
             period="Julio - Octubre 2022"
             company="Arian International Projects"
             href="https://arianinternational.eu/"
-            duty1="Desarrollo de la web con HTML, CSS y JavaScript."
-            duty2="Adaptación de la web corporativa con diseño responsive a diferentes dispositivos"
-            duty3="Mejora del tiempo de carga, la usabilidad y la experiencia de usuario"
-            duty4="Incorporación de herramientas de medición para campañas de marketing digital."
+            duty1="Desarrollo de la web con HTML, CSS y Wordpress."
+            duty2="Adaptación de diseño responsive a distintos dispositivos. Mejora del tiempo de carga, la usabilidad, la experiencia de usuario (UX & UI) y el posicionamiento web (SEO)."
+            duty3="Incorporación de herramientas de medición (Google Analytics, Tag Manager, Data Studio) para campañas de marketing."
+            duty4="Automatización de procesos de trabajo."
           />
         ) : (
           null
@@ -114,9 +114,9 @@ export default function Trabajos() {
             href="https://poliedric.com/"
             period="Junio 2021 - Marzo 2022"
             duty1="Gestión de campañas publicitarias de pago por clic. Elaboración de la estrategia, diseño implementación, medición y análisis de la performance de los anuncios en Google Ads, Facebook Ads, Amazon Ads y Linkedin Ads."
-            duty2="Adaptación de diseño responsive a distintos dispositivos. Mejora del tiempo de carga, la usabilidad, la experiencia de usuario (UX & UI) y el posicionamiento web (SEO)."
-            duty3="Incorporación de herramientas de medición (Google Analytics, Tag Manager, Data Studio) para campañas de marketing."
-            duty4="Automatización de procesos de trabajo."
+            duty2="Invertí +10.000€ mensuales en campañas y aumenté el ROI en más del 300% en los negocios de diferentes clientes."
+            duty3="Reuniones frecuentes con clientes para analizar los resultados y redefinir las estrategias de márqueting."
+            duty4="Auditorías SEO de páginas web y diseño de estrategias para mejorar el posicionamiento."
           />
         ) : (
           null

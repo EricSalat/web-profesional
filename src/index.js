@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { IntlProvider } from 'react-intl';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { LangProvider } from './context/langContext';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <LangProvider>
+        <App /> 
+      </LangProvider> 
+      //No sé si debo envolverlo de un browser Router para la traducción?
   </React.StrictMode>
 );
 
