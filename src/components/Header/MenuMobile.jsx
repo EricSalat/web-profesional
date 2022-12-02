@@ -35,13 +35,13 @@ function MenuMobile({onClick, setLanguageIcon}) {
               className="know-me-button"
             />
               { languageIconMenu ? (
-              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
+              <HiLanguage style={{color: "var(--verde)", marginTop: 30, cursor: "pointer" }} size="22" 
               onClick={() => {
               idioma.establecerLenguaje("en-GB"); 
               setLanguageIconMenu(false);
               }} />
           ) : (
-              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
+              <HiLanguage style={{color: "var(--verde)", marginTop: 30, cursor: "pointer" }} size="22" 
               onClick={() => {
               idioma.establecerLenguaje("es-ES"); 
               setLanguageIconMenu(true);
