@@ -73,7 +73,19 @@ section {
   font-weight: 400;
   color: var(--verde);
   padding-bottom: 25px;
+  --animate-delay: 500ms;
 
+}
+.big-heading:nth-child(1) {
+  --animate-delay: 700ms;
+}
+.big-heading:nth-child(2) {
+  --animate-delay: 900ms;
+}
+
+
+#hero p {
+  --animate-delay: 1100ms;
 }
 
 .know-me-button {
@@ -89,6 +101,7 @@ section {
   padding: 1.25rem 1.75rem;
   cursor: pointer;
   font-size: 13px;
+  --animate-delay: 1300ms;
 }
 
 main section:first-of-type p:last-of-type {

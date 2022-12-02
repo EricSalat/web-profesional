@@ -37,22 +37,22 @@ function App() {
         <Header onclick={menuIconClick} />
         <main>
           <section id="hero">
-            <p className="mini-heading">
+            <p className="mini-heading animate__animated animate__fadeIn animate__delay-1s">
               <FormattedMessage id="app.welcome" 
               defaultMessage="Hola, me llamo" 
 
               />
             </p>
-            <h1 className="big-heading">Èric Salat.</h1>
-            <h2 className="big-heading"> <FormattedMessage id="app.subtitle" defaultMessage="Y programo aplicaciones web." />
+            <h1 className="big-heading animate__animated animate__fadeIn animate__delay-1s">Èric Salat.</h1>
+            <h2 className="big-heading animate__animated animate__fadeIn animate__delay-1s"> <FormattedMessage id="app.subtitle" defaultMessage="Y programo aplicaciones web." />
             </h2>
-            <p>
+            <p className="animate__animated animate__fadeIn animate__delay-1s">
             <FormattedMessage id="app.introduction" defaultMessage="Soy Front-end Developer con experiencia en marketing digital y me dedico a crear aplicaciones desde el principio hasta el final: empezando por la concepción de la idea de negocio, pasando por el desarrollo, hasta llegar a la monetización." />
             </p>
             <Button
               // texto="Haz clic para conocerme"
               texto={<FormattedMessage id="app.button" defaultMessage="Haz clic para conocerme"/>} 
-              className="know-me-button"
+              className="know-me-button animate__animated animate__fadeInUp animate__delay-1s"
               href="#about"
             />
           </section>

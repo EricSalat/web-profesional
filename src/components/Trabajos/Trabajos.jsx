@@ -23,7 +23,7 @@ export default function Trabajos() {
 
   return (
     <>
-      <NumberedHeading texto={<FormattedMessage id="jobs.title"/>} />
+      <NumberedHeading texto={<FormattedMessage id="jobs.title" defaultMessage="Donde he trabajado"/>} />
       <div className="jobs">
         <div className="jobs-slider">
           <TabButton

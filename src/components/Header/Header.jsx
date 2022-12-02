@@ -1,6 +1,7 @@
 import * as React from "react";
 import cv from "./cv.pdf";
 import "./Header.css";
+import 'animate.css';
 import Button from "../Button/Button";
 import logo from "../../assets/logos/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
@@ -19,7 +20,7 @@ function Header({onclick}) {
 
   return (
     <header>
-      <nav>
+      <nav className="animate__animated animate__fadeInDown animate__delay-2s">
           <img src={logo} height="40" width="40" href="http://ericsalat.com/"></img>
           <div className="contenedor-menu">
             <ol>
@@ -46,13 +47,6 @@ function Header({onclick}) {
               idioma.establecerLenguaje("es-ES"); 
               setLanguageIcon(true)}} />      
           )}
-
-              {/* <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
-              onClick={() => idioma.establecerLenguaje("es-ES")} /> */}
-
-              {/* <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
-              onClick={() => idioma.establecerLenguaje("en-GB")} /> */}
-
           </div>
           <div
             className="mobile-menu-toggle"

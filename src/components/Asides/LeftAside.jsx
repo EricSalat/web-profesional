@@ -6,7 +6,7 @@ import "../Asides/Asides.css";
 
 export default function LeftAside() {
   return(
-    <aside className="left-aside">
+    <aside className="left-aside animate__animated animate__fadeInUp animate__delay-2s">
       <div>
         <div>
           <ul>
