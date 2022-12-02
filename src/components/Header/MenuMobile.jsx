@@ -9,9 +9,9 @@ import { langContext } from '../../context/langContext';
 import { useContext, useState } from "react";
 
 
-function MenuMobile({onClick, setLanguageIcon}) {
+function MenuMobile({onClick}) {
 
-  const [languageIconMenu, setLanguageIconMenu] = useState(false)
+  const [languageIconMenu, setLanguageIconMenu] = useState(true)
 
   const idioma = useContext(langContext);
 
