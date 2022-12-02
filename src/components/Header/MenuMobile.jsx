@@ -16,7 +16,7 @@ function MenuMobile({onClick}) {
   const idioma = useContext(langContext);
 
   return(
-      <div className="mobile-menu-modal" >
+      <div className="mobile-menu-modal animate__animated animate__fadeInRightBig animate__faster" >
         <div>
           <nav>
             <div className="mobile-menu-top">
