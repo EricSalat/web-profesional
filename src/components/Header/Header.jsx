@@ -1,5 +1,6 @@
 import * as React from "react";
-import cv from "./cv.pdf";
+import cv_es from "./cv_es.pdf";
+import cv_en from "./cv_en.pdf";
 import "./Header.css";
 import 'animate.css';
 import Button from "../Button/Button";
@@ -31,7 +32,7 @@ function Header({onclick}) {
               
               <Button
                 texto={<FormattedMessage id="header.cv" defaultMessage="Currículum" />}
-                href={cv}
+                href={cv_en}
                 className="header-button"
               />
             </ol>

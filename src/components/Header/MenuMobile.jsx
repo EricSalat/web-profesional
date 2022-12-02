@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Header.css";
 import Button from "../Button/Button";
 import { IoIosClose } from "react-icons/io";
-import cv from "./cv.pdf";
+import cv_en from "./cv_en.pdf";
 import { FormattedMessage } from 'react-intl';
 import { HiLanguage } from "react-icons/hi2";
 import { langContext } from '../../context/langContext';
@@ -31,7 +31,7 @@ function MenuMobile({onClick}) {
               </ul>
               <Button
               texto={<FormattedMessage id="header.cv" defaultMessage="Currículum" />}
-              href={cv}
+              href={cv_en}
               className="know-me-button"
             />
               { languageIconMenu ? (
