@@ -6,7 +6,6 @@
   text-decoration: none;
   text-decoration-skip-ink: auto;
   position: relative;
-  transition: all 0.25cs cubic-beizer(0.645,0.045,0.355,1);
   display: flex;
   align-items: center;
   width: 100%;

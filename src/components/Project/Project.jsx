@@ -2,6 +2,7 @@ import * as React from "react";
 import "./Project.css";
 import { FcOpenedFolder } from "react-icons/fc";
 import { RiShareBoxLine, RiGithubLine } from "react-icons/ri";
+import { FiFolder } from "react-icons/fi";
 
 
 function Project(props) {
@@ -9,16 +10,26 @@ function Project(props) {
       <div>
         <div className="project-card">
           <header className="project-top">
-            <a href={props.weblink} target="_blank">
-              <FcOpenedFolder />
-            </a>
-            <a href={props.githublink} target="_blank">
-              <RiGithubLine />
-            </a>
+            <div>
+              <a href={props.weblink} target="_blank">
+                <FcOpenedFolder />
+              </a>
+            </div>
+            <div>
+              <a href={props.githublink} target="_blank">
+                <RiGithubLine size="27.5" style={{marginRight: 10}} />
+              </a>
+              <a href={props.weblink} target="_blank">
+                <RiShareBoxLine size="27"/>
+              </a>
+              
+            </div>
             
           </header>
           <div>
-            <h3>{props.title}</h3>
+            <a href={props.weblink}>
+              <h3>{props.title}</h3>
+            </a>
             <p>{props.description}</p>
           </div>
           <footer>

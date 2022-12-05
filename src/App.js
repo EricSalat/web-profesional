@@ -10,9 +10,7 @@ import Trabajos from './components/Trabajos/Trabajos';
 import LeftAside from './components/Asides/LeftAside';
 import RightAside from './components/Asides/RightAside';
 import MenuMobile from './components/Header/MenuMobile';
-import { SlSocialLinkedin } from "react-icons/sl";
-import { HiOutlineMail } from "react-icons/hi";
-import { RiGithubLine } from "react-icons/ri";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -79,7 +77,7 @@ function App() {
                 </div>
               </div>
               <div>
-                <img src={FotoEric} height="300" width="300"></img>
+                <img src={FotoEric} height="300" width="300" alt="Retrato de Èric Salat" title="Retrato de Èric Salat"></img>
               </div>
             </div>
           </section>
@@ -145,32 +143,7 @@ function App() {
               texto={<FormattedMessage id="next.button" defaultMessage="Contacto"/>} href="mailto:ericsalatb@gmail.com" />
           </section>
         </main>
-        <footer className="developed-by">
-          <ul>
-            <li>
-              <a href="https://github.com/EricSalat" target="_blank">
-                <RiGithubLine
-                  size="22"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">
-                <SlSocialLinkedin
-                  size="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="mailto:ericsalatb@gmail.com" target="_blank">
-                <HiOutlineMail
-                  size="22"
-                />
-              </a>
-            </li>
-          </ul>
-          <p><FormattedMessage id="app.footer" defaultMessage="Desarrollado con ❤️ por "/> <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
-        </footer>
+        <Footer />
       </div>
   );
 }
