@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { HiOutlineMail } from "react-icons/hi";
-import { RiGithubLine } from "react-icons/ri";
+import { RiGithubLine, RiTwitterLine } from "react-icons/ri";
 import "../Asides/Asides.css";
 
 export default function LeftAside() {
@@ -22,6 +22,13 @@ export default function LeftAside() {
               <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">
                 <SlSocialLinkedin
                 size="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/EricSalat" target="_blank">
+                <RiTwitterLine
+                size="22"
                 />
               </a>
             </li>

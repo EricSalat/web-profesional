@@ -124,20 +124,12 @@ function App() {
                 tech4="React"
                 githublink="https://github.com/EricSalat/Selector-Asientos"
               />
-              {/* <Project
-                title="Lista de tareas"
-                description="Una app para apuntar y gestionar tus tareas: anota, tacha y elimina lo que hayas completado. Hecha con JavaScript y React."
-                tech="JavaScript"
-                tech2="React"
-                weblink="http://ericsalat.com/tareas/"
-                githublink="https://github.com/EricSalat/aplicacion-tareas"
-              /> */}
             </div>
           </section>
           <section id="next">
             <p><FormattedMessage id="next.title" defaultMessage="04. ¿Ahora qué?"/></p>
             <p><FormattedMessage id="next.subtitle" defaultMessage="Sigamos en contacto"/></p>
-            <p><FormattedMessage id="next.description" defaultMessage="Actualmente estoy buscando nuevas oportunidades laborales. Si tienes alguna propuesta o consulta, no dudes en contactarme. ¡Te responderé lo más rápido posible!"/></p>
+            <p><FormattedMessage id="next.description" defaultMessage="Si tienes alguna propuesta o consulta, no dudes en contactarme. ¡Te responderé lo más rápido posible!"/></p>
             <Button
               className="know-me-button"
               texto={<FormattedMessage id="next.button" defaultMessage="Contacto"/>} href="mailto:ericsalatb@gmail.com" />
