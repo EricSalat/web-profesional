@@ -15,6 +15,8 @@
   "about.description-2": "En la universidad estudié comunicación y marketing, que combinados con mis conocimientos en programación, me permiten ser un perfil híbrido con una visión transversal de los proyectos. Por ello, enfoco el Front-end no solo al desarrollo, sino en la mejora de embudos de tráfico y la conversión de leads y ventas.",
   "about.description-3": "Estas son las tecnologías con las que he estado trabajando:",
 
+  "__SEPARADOR__": "TRABAJOS",
+
   "jobs.title": "Donde he trabajado",
   "jobs.arian": "Desarrollador de Front-end",
   "jobs.arian-dates": "Julio - Octubre 2022",
@@ -37,9 +39,6 @@
   "jobs.ainkaa-duty3": "Creación de planes de empresa, de negocio y viabilidad. Realización de plan de marketing e investigación de mercados.",
   "jobs.ainkaa-duty4": "Elevator pitch y presentación de PMV para la búsqueda de financiación.",
 
-
-
-
   "jobs.adiplus": "Periodista",
   "jobs.adiplus-dates": "Octubre 2019 - Junio 2020",
   "jobs.adiplus-duty1": "Redacción y edición de noticias y contenidos para el portal del sector gastronómico Pan&Pizza.",
@@ -54,16 +53,14 @@
   "jobs.ara-duty3": "Asistencia a ruedas de prensa.",
   "jobs.ara-duty4": "Colaboración puntual con otras secciones.",
 
-  "jobs.digital": "Desarrollador de Front-end",
+  "jobs.digital": "Front-end and Email Developer",
   "jobs.digital-dates": "Enero 2023 - Actualidad",
-  "jobs.digital-duty1": "Maquetación de campañas de email para CaixaBank",
-  "jobs.digital-duty2": "Programación responsive para los distintos clientes de correo",
+  "jobs.digital-duty1": "Maquetación de campañas de email para CaixaBank en HTML, CSS y JavaScript.",
+  "jobs.digital-duty2": "Programación responsive para los distintos clientes de correo.",
+  "jobs.digital-duty3": "Maquetación pixel perfect en base a mockups de Adobe XD.",
+  "jobs.digital-duty4": "Publicación y seguimiento de campañas Customer Journey con Adobe Campaigns.",
   
-  "jobs.digital-duty3": "Maquetación pixel perfect en base a mockups de Adobe XD",
-  
-
-
-
+  "__SEPARADOR2__": "PROYECTOS",
 
   "works.title": "Cosas que he programado",
   "works.professional-website": "Web profesional",

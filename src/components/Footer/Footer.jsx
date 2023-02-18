@@ -32,7 +32,6 @@ function Footer() {
           </ul>
           <p><FormattedMessage id="app.footer" defaultMessage="Desarrollado con ❤️ por "/> <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
         </footer>
-    
   );
 }
 

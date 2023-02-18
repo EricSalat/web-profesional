@@ -9,25 +9,41 @@ import { FormattedMessage } from 'react-intl';
 
 export default function Trabajos() {
 
-  const [arian, setArian] = useState(true);
+  const [digitalResponse, setDigitalResponse] = useState(true)
+  const [arian, setArian] = useState(false);
   const [poliedric, setPoliedric] = useState(false);
   const [ainkaa, setAinkaa] = useState(false);
   const [adiplus, setAdiplus] = useState(false);
   const [diariAra, setDiariAra] = useState(false);
-  const [digitalResponse, setDigitalResponse] = useState(false)
 
-  const [arianTab, setArianTab] = useState(true);
+  const [digitalResponseTab, setDigitalResponseTab] = useState(true)
+  const [arianTab, setArianTab] = useState(false);
   const [poliedricTab, setPoliedricTab] = useState(false);
   const [ainkaaTab, setAinkaaTab] = useState(false);
   const [adiPlusTab, setAdiPlusTab] = useState(false);
   const [diariAraTab, setDiariAraTab] = useState(false);
-  const [digitalResponseTab, setDigitalResponseTab] = useState(false)
-
+  
   return (
     <>
       <NumberedHeading texto={<FormattedMessage id="jobs.title" defaultMessage="Donde he trabajado"/>} />
       <div className="jobs">
         <div className="jobs-slider">
+    
+              <TabButton
+              text="Digital Response"
+              class={digitalResponseTab ? "tab-button-active" : "tab-button-inactive"}
+              id="digital"
+              onclick={() => {
+                setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(false); setDiariAra(false); setDigitalResponse(true);
+                setArianTab(false);
+                setPoliedricTab(false);
+                setAinkaaTab(false);
+                setAdiPlusTab(false);
+                setDiariAraTab(false);
+                setDigitalResponseTab(true);
+              }}
+              />
+
           <TabButton
             text="Arian International"
             id="arian"
@@ -97,22 +113,23 @@ export default function Trabajos() {
               setDigitalResponseTab(false);
             }}
           />
-
-          <TabButton
-          text="Digital Response"
-          class={digitalResponseTab ? "tab-button-active" : "tab-button-inactive"}
-          id="digital"
-          onclick={() => {
-            setArian(false); setPoliedric(false); setAinkaa(false); setAdiplus(false); setDiariAra(false); setDigitalResponse(true);
-            setArianTab(false);
-            setPoliedricTab(false);
-            setAinkaaTab(false);
-            setAdiPlusTab(false);
-            setDiariAraTab(false);
-            setDigitalResponseTab(true);
-          }}
-          />
         </div>
+
+        {digitalResponse ? (
+          <FichaTrabajo
+          id="digital-description"
+          role={<FormattedMessage id="jobs.digital" defaultMessage="Frontend and Email Developer" />}
+          href="https://www.digitalresponse.es/"
+          company="Digital Response"
+          period={<FormattedMessage id="jobs.digital-dates" defaultMessage="Enero 2023 - Actualidad" />}
+          duty1={<FormattedMessage id="jobs.digital-duty1" defaultMessage="Maquetación de campañas de email para CaixaBank en HTML, CSS y JavaScript." />}
+          duty2={<FormattedMessage id="jobs.digital-duty2" defaultMessage="Programación responsive para los distintos clientes de correo." />}
+          duty3={<FormattedMessage id="jobs.digital-duty3" defaultMessage="Maquetación pixel perfect en base a mockups de Adobe XD" />}
+          duty4={<FormattedMessage id="jobs.digital-duty4" defaultMessage="Publicación y seguimiento de campañas Customer Journey con Adobe Campaigns." />}
+          />
+          ) : (
+            null
+            )}
 
         {arian ? (
           <FichaTrabajo
@@ -195,21 +212,7 @@ export default function Trabajos() {
             null
             )}
 
-        {digitalResponse ? (
-          <FichaTrabajo
-          id="digital-description"
-          role={<FormattedMessage id="jobs.digital" defaultMessage="Desarrollador de Front-end" />}
-          href="https://www.digitalresponse.es/"
-          company="Digital Response"
-          period={<FormattedMessage id="jobs.ara-dates" defaultMessage="Septiembre 2018 - Mayo 2019" />}
-          duty1={<FormattedMessage id="jobs.digital-duty1" defaultMessage="Programación responsive para los distintos clientes de correo" />}
-          duty2={<FormattedMessage id="jobs.digital-duty2" defaultMessage="Programación responsive para los distintos clientes de correo." />}
-          duty3={<FormattedMessage id="jobs.digital-duty3" defaultMessage="Maquetación pixel perfect en base a mockups de Adobe XD" />}
-          // duty4={<FormattedMessage id="jobs.digital-duty4" defaultMessage="Colaboración puntual con otras secciones." />}
-          />
-          ) : (
-            null
-            )}
+        
       </div>
     </>
   );
