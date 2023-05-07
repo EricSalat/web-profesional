@@ -32,7 +32,7 @@ function Header({onclick}) {
               
               <Button
                 texto={<FormattedMessage id="header.cv" defaultMessage="Currículum" />}
-                href={cv_en}
+                href={cv_es}
                 className="header-button"
               />
             </ol>
