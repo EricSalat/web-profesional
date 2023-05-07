@@ -88,6 +88,16 @@ function App() {
             <NumberedHeading texto={<FormattedMessage id="works.title" defaultMessage="Cosas que he programado"/>} />
             <div className="projects-section">
               <Project
+                title={<FormattedMessage id="works.professional-website" defaultMessage="Crypto stocks"/>}
+                description={<FormattedMessage id="works.professional-website-description" defaultMessage="Pantalla principal de una app de inversiones de criptomonedas. Ve el balance de tus stocks."/>}
+                tech="HTML"
+                tech2="CSS"
+                tech3="JavaScript"
+                tech4="React"
+                weblink="https://www.ericsalat.com/kelisto/"
+                githublink="https://github.com/EricSalat/kelisto-ejercicio-tecnico"
+              />
+              <Project
                 title={<FormattedMessage id="works.professional-website" defaultMessage="Web profesional"/>}
                 description={<FormattedMessage id="works.professional-website-description" defaultMessage="Revisa el código de este mismo sitio, mi web profesional, hecha con HTML, CSS, JavaScript y React."/>}
                 tech="HTML"

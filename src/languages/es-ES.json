@@ -71,6 +71,8 @@
   "works.calculator-description": "Una calculadora para el móvil que permite sumar, restar, multiplicar y dividir. Hecha con JavaScript y React.",
   "works.cinema": "Reserva entradas de cine",
   "works.cinema-description": "Una app para comprar entradas de cine. Selecciona la película, los asientos y la cantidad de tickets. Hay descuentos entre semana.",
+  "works.crypto": "Crypto stocks",
+  "works.crypto-description": "Pantalla principal de una app de inversiones de criptomonedas. Ve el balance de tus stocks.",
 
   "next.title": "04. ¿Ahora qué?",
   "next.subtitle": "Sigamos en contacto",
