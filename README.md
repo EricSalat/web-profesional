@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Portfolio profesional
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+¡Bienvenido al repositorio de mi página web profesional! Aquí encontrarás toda la información y los recursos necesarios para entender, desarrollar y contribuir a mi sitio web personal. Puedes acceder a la página web desplegada en [https://www.ericsalat.com/](https://www.ericsalat.com/).
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+Mi página web profesional es un espacio en línea donde comparto información sobre mi perfil, experiencia laboral, proyectos destacados y habilidades. El objetivo principal de este sitio web es presentar mi trayectoria profesional de manera clara y atractiva para los visitantes interesados en colaboraciones, oportunidades laborales o simplemente para conocer más sobre mí.
 
-### `npm start`
+## Estructura del repositorio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+El repositorio está organizado de la siguiente manera:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `/css`: Contiene todos los archivos CSS utilizados en la página web.
+- `/images`: Directorio que almacena las imágenes utilizadas en la página web.
+- `/js`: Contiene los archivos JavaScript utilizados para la interactividad en la página web.
+- `index.html`: Archivo principal que representa la página de inicio de mi sitio web.
+- `about.html`: Archivo que muestra información detallada sobre mi perfil y experiencia.
+- `projects.html`: Archivo que presenta una lista de mis proyectos destacados.
+- `contact.html`: Archivo que proporciona información de contacto para aquellos que deseen comunicarse conmigo.
 
-### `npm test`
+## Contribución
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Si estás interesado en contribuir a mi página web profesional, ¡eres bienvenido! Puedes seguir los pasos a continuación para hacerlo:
 
-### `npm run build`
+1. Haz un fork de este repositorio.
+2. Crea una rama con un nombre descriptivo para tu contribución.
+3. Realiza los cambios o mejoras en tu rama local.
+4. Asegúrate de que los cambios se reflejen correctamente en tu versión local.
+5. Envía una solicitud de pull indicando los cambios realizados.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contacto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Si tienes alguna pregunta o sugerencia relacionada con mi página web profesional, no dudes en contactarme. Puedes hacerlo a través del formulario de contacto en la sección "[Contacto](https://www.ericsalat.com/#next)" de mi sitio web .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por visitar mi repositorio y revisar mi página web profesional! Espero que encuentres la información útil y atractiva. Si tienes alguna sugerencia o encuentras algún problema, no dudes en informarme. ¡Disfruta explorando mi sitio web!
