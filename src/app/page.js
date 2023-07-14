@@ -1,6 +1,5 @@
 'use client'
 import Image from 'next/image'
-import styles from './page.module.css'
 import { useState } from 'react';
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
@@ -70,9 +69,8 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div>
-                <img src={FotoEric} height="300" width="300" alt="Retrato de Èric Salat" title="Retrato de Èric Salat"></img>
-              </div>
+                <Image
+                 src={FotoEric} height="300" width="300" alt="Retrato de Èric Salat" title="Retrato de Èric Salat" />
             </div>
           </section>
           <section id="experience">

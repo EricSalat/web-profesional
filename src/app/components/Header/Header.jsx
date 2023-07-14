@@ -1,5 +1,6 @@
 'use client'
 import * as React from "react";
+import Image from 'next/image'
 // import cv_es from "./cv_es.pdf";
 // import cv_en from "./cv_en.pdf";
 import "./Header.css";
@@ -21,7 +22,7 @@ function Header({onclick}) {
   return (
     <header>
       <nav className="animate__animated animate__fadeInDown animate__delay-2s">
-          <img src={logo} height="40" width="40" href="http://ericsalat.com/"></img>
+           <Image  src={logo} height="40" width="40" href="http://ericsalat.com/" />
           <div className="contenedor-menu">
             <ol>
               <li><a href="#about">Sobre mi</a></li>
