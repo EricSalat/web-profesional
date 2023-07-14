@@ -4,9 +4,7 @@ import "./Header.css";
 import Button from "../Button/Button";
 import { IoIosClose } from "react-icons/io";
 // import cv_en from "./cv_en.pdf";
-// import { FormattedMessage } from 'react-intl';
 import { HiLanguage } from "react-icons/hi2";
-// import { langContext } from '../../context/langContext';
 import { useContext, useState } from "react";
 
 
@@ -14,7 +12,7 @@ function MenuMobile({onClick}) {
 
   const [languageIconMenu, setLanguageIconMenu] = useState(true)
 
-  const idioma = useContext(langContext);
+  // const idioma = useContext(langContext);
 
   return(
       <div className="mobile-menu-modal animate__animated animate__fadeInRightBig animate__faster" >
@@ -25,13 +23,13 @@ function MenuMobile({onClick}) {
             </div>
             <div className="mobile-menu-bottom">
               <ul>
-                <li><a onClick={onClick} href="#about"><FormattedMessage id="header.01" defaultMessage="Sobre mi" /></a></li>
-                <li><a onClick={onClick} href="#experience"><FormattedMessage id="header.02" defaultMessage="Experiencia" /></a></li>
-                <li><a onClick={onClick} href="#works"><FormattedMessage id="header.03" defaultMessage="Trabajos" /></a></li>
-                <li><a onClick={onClick} href="#next"><FormattedMessage id="header.04" defaultMessage="Contacto" /></a></li>
+                <li><a onClick={onClick} href="#about">Sobre mi</a></li>
+                <li><a onClick={onClick} href="#experience">Experiencia</a></li>
+                <li><a onClick={onClick} href="#works">Trabajos</a></li>
+                <li><a onClick={onClick} href="#next">Contacto</a></li>
               </ul>
               <Button
-              texto={<FormattedMessage id="header.cv" defaultMessage="Currículum" />}
+              texto="Currículum"
               // href={cv_en}
               className="know-me-button"
             />

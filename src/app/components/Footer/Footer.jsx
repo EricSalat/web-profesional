@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { FormattedMessage } from 'react-intl';
 import { SlSocialLinkedin } from "react-icons/sl";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGithubLine } from "react-icons/ri";
@@ -30,7 +29,7 @@ function Footer() {
               </a>
             </li>
           </ul>
-          <p><FormattedMessage id="app.footer" defaultMessage="Desarrollado con ❤️ por "/> <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
+          <p>Desarrollado con ❤️ por <a href="https://www.linkedin.com/in/eric-salat/" target="_blank">Èric Salat</a></p>
         </footer>
   );
 }

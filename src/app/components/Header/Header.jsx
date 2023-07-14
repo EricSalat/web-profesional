@@ -8,15 +8,13 @@ import Button from "../Button/Button";
 import logo from "../../assets/logos/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { HiLanguage } from "react-icons/hi2";
-// import { langContext } from '../../context/langContext';
 import { useContext, useState } from "react";
-// import { FormattedMessage } from 'react-intl';
 
 
 
 function Header({onclick}) {
 
-  const idioma = useContext(langContext);
+  // const idioma = useContext(langContext);
 
   const [languageIcon, setLanguageIcon] = useState(true)
 
@@ -26,13 +24,13 @@ function Header({onclick}) {
           <img src={logo} height="40" width="40" href="http://ericsalat.com/"></img>
           <div className="contenedor-menu">
             <ol>
-              <li><a href="#about"><FormattedMessage id="header.01" defaultMessage="Sobre mi" /></a></li>
-              <li><a href="#experience"><FormattedMessage id="header.02" defaultMessage="Experiencia" /></a></li>
-              <li><a href="#works"><FormattedMessage id="header.03" defaultMessage="Trabajos" /></a></li>
-              <li><a href="#next"><FormattedMessage id="header.04" defaultMessage="Contacto" /></a></li>              
+              <li><a href="#about">Sobre mi</a></li>
+              <li><a href="#experience">Experiencia</a></li>
+              <li><a href="#works">Trabajos</a></li>
+              <li><a href="#next">Contacto</a></li>              
               
               <Button
-                texto={<FormattedMessage id="header.cv" defaultMessage="Currículum" />}
+                texto="Currículum"
                 // href={cv_es}
                 className="header-button"
               />
