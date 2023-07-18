@@ -1,5 +1,5 @@
 import * as React from "react";
-import "../Asides/Asides.css";
+import styles from "./asides.module.css";
 
 export default function RightAside(){
   return (

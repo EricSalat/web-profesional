@@ -2,7 +2,7 @@ import * as React from "react";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGithubLine, RiTwitterLine } from "react-icons/ri";
-import "../Asides/Asides.css";
+import styles from "./asides.module.css";
 
 export default function LeftAside() {
   return(

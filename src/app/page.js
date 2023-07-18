@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Header from "./components/Header/Header";
 import Button from "./components/Button/Button";
 import NumberedHeading from './components/Numbered-Heading/Numbered-Heading';
-import FotoEric from "./assets/eric_salat.jpg";
+import FotoEric from "../../public/eric_salat.jpg";
 import Project from "./components/Project/Project";
 import Trabajos from './components/Trabajos/Trabajos';
 import LeftAside from './components/Asides/LeftAside';

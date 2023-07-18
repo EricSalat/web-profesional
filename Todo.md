@@ -1,0 +1,5 @@
+- Cambiar Favicon
+- Hacer routing con la carpeta pages para poder navegar entre web español e inglés (done)
+- Ordenar mejor las hojas CSS dentro de modules y poner cada módulo a la className correpsondiente (curro). El cambio es largo así que de momento lo despiroizamos.
+- Subir los archivos de CV (pide hacerlo con un método concreto) (done)
+- Añadir el script de Google Analytics

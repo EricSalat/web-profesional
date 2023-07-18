@@ -6,6 +6,7 @@ function Button(props) {
     <>
       <a 
       href={props.href}
+      target={props.target}
       >
         <button type="button" className={props.className}>{props.texto}</button>
       </a>

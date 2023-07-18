@@ -1,12 +1,10 @@
 'use client'
 import * as React from "react";
 import Image from 'next/image'
-// import cv_es from "./cv_es.pdf";
-// import cv_en from "./cv_en.pdf";
 import "./Header.css";
 import 'animate.css';
 import Button from "../Button/Button";
-import logo from "../../assets/logos/logo.png";
+import logo from "../../../../public/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { HiLanguage } from "react-icons/hi2";
 import { useContext, useState } from "react";
@@ -32,7 +30,8 @@ function Header({onclick}) {
               
               <Button
                 texto="Currículum"
-                // href={cv_es}
+                href="/CV_ERIC_SALAT_BADIA.pdf"
+                target="_blank"
                 className="header-button"
               />
             </ol>
