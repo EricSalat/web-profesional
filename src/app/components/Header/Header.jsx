@@ -20,27 +20,25 @@ function Header({onclick}) {
   return (
     <header>
       <nav className="animate__animated animate__fadeInDown animate__delay-2s">
-           <Image  src={logo} height="40" width="40" href="http://ericsalat.com/" />
+           <Image  src={logo} height="40" width="40" href="http://ericsalat.com/en" />
           <div className="contenedor-menu">
             <ol>
-              <li><a href="#about">Sobre mi</a></li>
-              <li><a href="#experience">Experiencia</a></li>
-              <li><a href="#works">Trabajos</a></li>
-              <li><a href="#next">Contacto</a></li>              
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#next">Contact</a></li>              
               
               <Button
-                texto="Currículum"
-                href="/CV_ERIC_SALAT_BADIA.pdf"
+                texto="Resume"
+                href="/CV_ERIC_SALAT_BADIA_ENG.pdf"
                 target="_blank"
                 className="header-button"
               />
             </ol>
 
           { languageIcon ? (
-              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
-              onClick={() => {
-              idioma.establecerLenguaje("en-GB"); 
-              setLanguageIcon(false)}} />
+              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22"
+              Link/>
           ) : (
               <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
               onClick={() => {

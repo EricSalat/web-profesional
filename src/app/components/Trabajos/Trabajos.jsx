@@ -118,14 +118,14 @@ export default function Trabajos() {
         {digitalResponse ? (
           <FichaTrabajo
           id="digital-description"
-          role="Frontend and Email Developer"
+          role="Front-end and Email Developer"
           href="https://www.digitalresponse.es/"
           company="Digital Response"
-          period="Enero 2023 - Actualidad"
-          duty1="Maquetación de campañas de email para CaixaBank en HTML, CSS y JavaScript."
-          duty2="Programación responsive para los distintos clientes de correo."
-          duty3="Maquetación pixel perfect en base a mockups de Adobe XD"
-          duty4="Publicación y seguimiento de campañas Customer Journey con Adobe Campaigns."
+          period="January 2023 - Present"
+          duty1="Implemented email campaign layouts using HTML, CSS, and JavaScript for CaixaBank."
+          duty2="Developed responsive programming to ensure proper display across various email clients. Conducted testing with Email on Acid."
+          duty3="Executed pixel-perfect and detailed designs based on mockups provided in Figma and Adobe XD."
+          duty4="Published and monitored Customer Journey campaigns using Adobe Campaigns."
           />
           ) : (
             null
@@ -134,14 +134,14 @@ export default function Trabajos() {
         {arian ? (
           <FichaTrabajo
             id="arian-description"
-            role="Desarrollador de Front-end"
-            period="Julio - Octubre 2022"
+            role="Front-end Developer"
+            period="July - October 2022"
             company="Arian International Projects"
             href="https://arianinternational.eu/"
-            duty1="Desarrollo de la web con HTML, CSS y Wordpress."
-            duty2="Adaptación de diseño responsive a distintos dispositivos. Mejora del tiempo de carga, la usabilidad, la experiencia de usuario (UX & UI) y el posicionamiento web (SEO)."
-            duty3="Incorporación de herramientas de medición (Google Analytics, Tag Manager, Data Studio) para campañas de marketing."
-            duty4="Automatización de procesos de trabajo."
+            duty1="Developed websites using HTML, CSS, and JavaScript, ensuring high-quality code and functionality"
+            duty2="Implemented responsive design techniques to optimize website display across various devices and screen sizes."
+            duty3="Optimized website loading time, improving user experience (UX)and user interface (UI)."
+            duty4="Integrated measurement tools to track and analyze data for digital marketing campaigns."
             />
             ) : (
               null
@@ -150,14 +150,14 @@ export default function Trabajos() {
         {poliedric ? (
           <FichaTrabajo
           id="poliedric-description"
-          role="Gestor de campañas SEM & PPC"
+          role="Search Engine Marketing (SEM) Specialist"
           company="Polièdric"
           href="https://poliedric.com/"
-          period="Junio 2021 - Marzo 2022"
-          duty1="Gestión de campañas publicitarias de pago por clic. Elaboración de la estrategia, diseño implementación, medición y análisis de la performance de los anuncios en Google Ads, Facebook Ads, Amazon Ads y Linkedin Ads."
-          duty2="Invertí +10.000€ mensuales en campañas y aumenté el ROI en más del 300% en los negocios de diferentes clientes."
-          duty3="Reuniones frecuentes con clientes para analizar los resultados y redefinir las estrategias de márqueting."
-          duty4="Auditorías SEO de páginas web y diseño de estrategias para mejorar el posicionamiento."
+          period="June 2021 - March 2022"
+          duty1="Managed pay-per-click advertising campaigns including the strategy, design, implementation, measuring and analysis of ad performance in Google Ads, Facebook Ads, Amazon Ads."
+          duty2="Invested +10.000€ monthly in campaigns and increased ROI +300% in different client businesses."
+          duty3="Met customers regularly to analyze results and redefine marketing strategies."
+          duty4="Audit customers webpages SEO and designed strategies to improve it."
           />
           ) : (
             null
@@ -167,13 +167,13 @@ export default function Trabajos() {
         {ainkaa ? (
           <FichaTrabajo
           id="ainkaa-description"
-          role="Desarrollador de Front-end & Project Manager"
+          role="Front-end Developer & Project Manager"
             company="Ainkaa"
-            period="Marzo 2021 - Actualidad"
-            duty1="Programa de creación de start-ups dirigido a jóvenes para crear una app móvil viable donde se realizó:"
-            duty2="Programación en HTML, CSS, Javascript y React. Diseño UX UI. Diseño de prototipos con Figma."
-            duty3="Creación de planes de empresa, de negocio y viabilidad. Realización de plan de marketing e investigación de mercados."
-            duty4="Elevator pitch y presentación de PMV para la búsqueda de financiación."
+            period="March 2021 - Present"
+            duty1="Start-up creation program for young people to create a viable mobile app. Includes:"
+            duty2="Coded with HTML, CSS, Javascript and React. Designed UI and UX experience. Prototyped with Figma."
+            duty3="Created business and viability plans. Maked marketing plan and benchmarking."
+            duty4="Elevator pitch and MVP presentation for financing search."
             />
             ) : (
               null
@@ -182,15 +182,14 @@ export default function Trabajos() {
         {adiplus ? (
           <FichaTrabajo
           id="adiplus-description"
-          
-          role="Periodista"
+          role="Journalist"
           href="https://www.linkedin.com/company/adiplus-techandcontent/"
           company="Adiplus Tech & Content"
-          period="Octubre 2019 - Junio 2020"
-          duty1="Redacción y edición de noticias y contenidos para el portal del sector gastronómico Pan&Pizza."
-          duty2="Redacción de artículos para la revista Newspa, el magazine del Gremio de Panaderos de la Provincia de Barcelona."
-          duty3="Redacción de noticias y artículos sobre seguros en Tiempo Seguro."
-          duty4="Diseño e implementación de estrategias de Posicionamiento SEO y campañas de email marketing."
+          period="October 2019 - June 2020"
+          duty1="Wrote news, interviews and reports in Spanish for Pan&Pizza, a newspage about the bakery and restaurant sector."
+          duty2="Compose news and reports at Newspa, the magazine of Bakers Guild of the Province of Barcelona."
+          duty3="Wrote hot news about technology and insurances at TiempoSeguro, a newspage about the insurance sector dedicated to customers."
+          duty4="Designed and implemented SEO strategies and email marketing campaigns."
           />
           ) : (
             null
@@ -199,14 +198,14 @@ export default function Trabajos() {
         {diariAra ? (
           <FichaTrabajo
           id="diariara-description"
-          role="Periodista"
+          role="Jorunalist"
           href="https://www.ara.cat/"
           company="Diari Ara"
-          period="Septiembre 2018 - Mayo 2019"
-          duty1="Redactor en prácticas de noticias, reportajes, entrevistas y otros contenidos en la sección de cultura sobre temas de música, literatura, cine, teatro y artes visuales."
-          duty2="Cobertura de la actualidad diaria."
-          duty3="Asistencia a ruedas de prensa."
-          duty4="Colaboración puntual con otras secciones."
+          period="September 2018 - May 2019"
+          duty1="Staff Writer internship. Wrote news, articles,interviews and another contents for the culture section about music, literature, cinema, theater and visual arts."
+          duty2="Covered hot news."
+          duty3="Attended at press conferences."
+          duty4="Cooperated evetually with other sections."
           />
           ) : (
             null
