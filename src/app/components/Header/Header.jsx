@@ -13,10 +13,20 @@ import Link from "next/link";
 
 function Header(props) {
 
+  // Obtener la URL actual
+  const urlActual = window.location.href;
+
+  // Definir los enlaces para ambos casos
+  const enlaceWebPrincipal = "http://ericsalat.com";
+  const enlaceOtroIdioma = "http://ericsalat.com/en";
+
+  // Determinar cuál enlace utilizar según la URL actual
+  const enlace = urlActual === enlaceWebPrincipal ? enlaceOtroIdioma : enlaceWebPrincipal;
+
   return (
     <header>
       <nav className="animate__animated animate__fadeInDown animate__delay-2s">
-           <Image  src={logo} height="40" width="40" href="http://ericsalat.com/en" />
+           <Image src={logo} height="40" width="40" href={enlace} />
           <div className="contenedor-menu">
             <ol>
               <li><a href="#about">{props.about}</a></li>
