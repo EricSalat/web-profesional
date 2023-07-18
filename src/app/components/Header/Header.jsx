@@ -7,15 +7,11 @@ import Button from "../Button/Button";
 import logo from "../../../../public/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { HiLanguage } from "react-icons/hi2";
-import { useContext, useState } from "react";
+import Link from "next/link";
 
 
 
-function Header({onclick}) {
-
-  // const idioma = useContext(langContext);
-
-  const [languageIcon, setLanguageIcon] = useState(true)
+function Header(props) {
 
   return (
     <header>
@@ -23,32 +19,30 @@ function Header({onclick}) {
            <Image  src={logo} height="40" width="40" href="http://ericsalat.com/en" />
           <div className="contenedor-menu">
             <ol>
-              <li><a href="#about">About Me</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#next">Contact</a></li>              
+              <li><a href="#about">{props.about}</a></li>
+              <li><a href="#experience">{props.experience}</a></li>
+              <li><a href="#works">{props.works}</a></li>
+              <li><a href="#next">{props.next}</a></li> 
               
               <Button
-                texto="Resume"
+                texto="Currículum"
                 href="/CV_ERIC_SALAT_BADIA_ENG.pdf"
                 target="_blank"
                 className="header-button"
               />
             </ol>
-
-          { languageIcon ? (
-              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22"
-              Link/>
-          ) : (
-              <HiLanguage style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }} size="22" 
-              onClick={() => {
-              idioma.establecerLenguaje("es-ES"); 
-              setLanguageIcon(true)}} />      
-          )}
+              <Link href="/en">
+                <HiLanguage
+                  style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }}
+                  size="22"
+                />
+              </Link>
+            
+         
           </div>
           <div
             className="mobile-menu-toggle"
-            onClick={onclick}>
+            onClick={props.onclick}>
             <BiMenuAltRight
               style={{ color: "var(--verde)", cursor: "pointer" }}
               size="40"

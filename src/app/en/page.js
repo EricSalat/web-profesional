@@ -6,7 +6,7 @@ import Button from "../components/Button/Button";
 import NumberedHeading from '../components/Numbered-Heading/Numbered-Heading';
 import FotoEric from "/public/eric_salat.jpg";
 import Project from "../components/Project/Project";
-import Trabajos from '../components/Trabajos/Trabajos';
+import Jobs from './components/Jobs';
 import LeftAside from '../components/Asides/LeftAside';
 import RightAside from '../components/Asides/RightAside';
 import MenuMobile from '../components/Header/MenuMobile';
@@ -28,7 +28,13 @@ export default function HomeEnglish() {
           ) : (
           null
         )}
-      <Header onclick={menuIconClick} />
+      <Header 
+        onclick={menuIconClick} 
+        about="About"
+        experience="Experience"
+        works="Works"
+        next="Contact"
+      />
 
       <main>
           <section id="hero">
@@ -75,7 +81,7 @@ export default function HomeEnglish() {
             </div>
           </section>
           <section id="experience">
-            <Trabajos />
+            <Jobs />
           </section>
           <section id="works">
             <NumberedHeading texto="Some Things I’ve Built"/>

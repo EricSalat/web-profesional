@@ -5,3 +5,5 @@
 - Añadir el script de Google Analytics
 - Modificar los componentes para que sean Server Side Rendering y no Client Side Rendering
 - Indicar que el idioma de /en es en inglés para ayudar a los buscadores a indexarla en búsuqedas en inglés
+- Adaptar la transmisión de props entre componentes lejanos de los componentes Trabajo y Ficha Trabajo para que no estén duplicados
+- Adaptar el CSS por módulos, porque ahora están importadas todas las hojas pequeñas de CSS pero no están haciendo nada.

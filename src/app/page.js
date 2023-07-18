@@ -28,7 +28,12 @@ export default function Home() {
           ) : (
           null
         )}
-      <Header onclick={menuIconClick} />
+      <Header 
+        about="Sobre mi"
+        experience="Experiencia"
+        works="Trabajos"
+        next="Contacto" 
+        onclick={menuIconClick} />
 
       <main>
           <section id="hero">
