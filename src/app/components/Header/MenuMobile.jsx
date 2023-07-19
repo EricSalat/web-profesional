@@ -5,25 +5,34 @@ import Button from "../Button/Button";
 import { IoIosClose } from "react-icons/io";
 import { HiLanguage } from "react-icons/hi2";
 import { useState } from "react";
+import Link from "next/link";
 
 
-function MenuMobile({onClick}) {
+function MenuMobile(props) {
 
-  const [languageIconMenu, setLanguageIconMenu] = useState(true)
+    // Obtener la URL actual
+    const urlActual = window.location.href;
+
+    // Definir los enlaces para ambos casos
+    const enlaceWebPrincipal = "http://ericsalat.com";
+    const enlaceOtroIdioma = "http://ericsalat.com/en";
+  
+    // Determinar cuál enlace utilizar según la URL actual
+    const enlace = urlActual === enlaceWebPrincipal ? enlaceOtroIdioma : enlaceWebPrincipal;
 
   return(
       <div className="mobile-menu-modal animate__animated animate__fadeInRightBig animate__faster" >
         <div>
           <nav>
             <div className="mobile-menu-top">
-              <IoIosClose style={{ color: "var(--verde)", cursor: "pointer"}} size="40" onClick={onClick}/>
+              <IoIosClose style={{ color: "var(--verde)", cursor: "pointer"}} size="40" onClick={props.onClick}/>
             </div>
             <div className="mobile-menu-bottom">
               <ul>
-                <li><a onClick={onClick} href="#about">About Me</a></li>
-                <li><a onClick={onClick} href="#experience">Experience</a></li>
-                <li><a onClick={onClick} href="#works">Works</a></li>
-                <li><a onClick={onClick} href="#next">Contact</a></li>
+                <li><a onClick={props.onClick} href="#about">{props.about}</a></li>
+                <li><a onClick={props.onClick} href="#experience">{props.experience}</a></li>
+                <li><a onClick={props.onClick} href="#works">{props.works}</a></li>
+                <li><a onClick={props.onClick} href="#next">{props.next}</a></li>
               </ul>
               <Button
               texto="Resume"
@@ -31,19 +40,13 @@ function MenuMobile({onClick}) {
               target="_blank"
               className="know-me-button"
             />
-              { languageIconMenu ? (
-              <HiLanguage style={{color: "var(--verde)", marginTop: 30, cursor: "pointer" }} size="22" 
-              onClick={() => {
-              idioma.establecerLenguaje("en-GB"); 
-              setLanguageIconMenu(false);
-              }} />
-          ) : (
-              <HiLanguage style={{color: "var(--verde)", marginTop: 30, cursor: "pointer" }} size="22" 
-              onClick={() => {
-              idioma.establecerLenguaje("es-ES"); 
-              setLanguageIconMenu(true);
-              }} />      
-          )}
+            
+              <Link href={enlace}>
+                <HiLanguage style={{color: "var(--verde)", marginTop: 30, cursor: "pointer" }} size="22"
+                 />
+              </Link>
+    
+          
             </div>
           </nav>
         </div>
