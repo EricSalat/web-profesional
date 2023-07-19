@@ -26,7 +26,7 @@ function Header(props) {
   return (
     <header>
       <nav className="animate__animated animate__fadeInDown animate__delay-2s">
-           <Image src={logo} height="40" width="40" href={urlActual} />
+           <Image src={logo} height="40" width="40" href={enlace} />
           <div className="contenedor-menu">
             <ol>
               <li><a href="#about">{props.about}</a></li>
@@ -41,7 +41,7 @@ function Header(props) {
                 className="header-button"
               />
             </ol>
-              <Link href={enlace}>
+              <Link href="/en">
                 <HiLanguage
                   style={{color: "var(--verde)", marginLeft: 15, cursor: "pointer" }}
                   size="22"

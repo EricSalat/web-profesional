@@ -24,13 +24,7 @@ export default function Home() {
       <LeftAside />
       <RightAside />
       { menuCollapse ? (
-          <MenuMobile 
-            onClick={menuIconClick} 
-            about="Sobre mi"
-            experience="Experiencia"
-            works="Trabajos"
-            next="Contacto" 
-            />
+          <MenuMobile onClick={menuIconClick} />
           ) : (
           null
         )}
